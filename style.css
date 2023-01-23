@@ -1,0 +1,242 @@
+    @font-face {
+        font-family: 'Bodega Sans';
+        src: url(/fonts/BodegaSans_Black.ttf);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background: -moz-linear-gradient(130deg, white 0%, white 50%, #333 50%, #333 100%);
+        background: -webkit-linear-gradient(130deg, white 0%, white 50%, #333 50%, #333 100%);
+        background: linear-gradient(130deg, white 0%, white 50%, #333 50%, #333 100%);
+        box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    }
+
+    #logo {
+        float: left;
+    }
+
+    nav {
+        padding: 25px;
+        line-height: 1.5;
+        text-align: right;
+        font-family: "Bodega Sans", arial, sans-serif;
+    }
+
+    nav a  {
+        display: block;
+        color: white;
+        font-size: 2.5rem;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    body {
+        background-color: rgb(67, 67, 67);
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        color: white;
+        font-size: 4rem;
+        font-family: 'Bodega Sans';
+    }
+
+    .motos #moto {
+        
+        background-color: white;
+        display: inline-block;
+        text-align: center;
+        width: 22%;
+        padding: 0 20px 20px;
+        color: #666;
+        box-sizing: border-box;
+    }
+
+    .motos #moto h3 {
+        font-weight: normal;
+        color: #FF9D00;
+        border-bottom: 2px solid #FF9D00;
+        margin: -10px 0 20px;
+        font-size: 2.5rem;
+        font-family: "Bodega Sans", arial, sans-serif;
+        text-transform: uppercase;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        display: block;
+    }
+
+    .motos #moto a {
+        display: block;
+        width: 100%;
+        background-color: #FF9D00;
+        color: white;
+        margin: auto;
+        padding: 10px 0;
+        text-decoration: none;
+    }
+
+    .motos article {
+        text-align: center;
+    }
+
+    .motos h2 {
+        padding-bottom: 2%;
+    }
+
+    .motos img {
+        max-width: 100%;
+        display: block;
+        border-style: none
+    }
+
+
+    .motos article { 
+        margin: 1%;
+        padding-bottom: 20px;
+    }
+
+    span {
+        color:rgb(255, 157, 0) ;
+    }
+
+    h2 {
+        padding-top: 2%;
+        color: white;
+        font-size: 3rem;
+        font-family: 'Bodega Sans';
+        margin-left: 5%;
+    }
+
+    h3 {
+        color :rgb(255, 157, 0);
+    }
+
+    .detail p{
+        color: white;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        margin-left: 5%;
+    }
+
+    .detail h2 {
+        border-top: 3px solid rgba(0, 0, 0, 0.075);
+        border-left: 3px solid rgba(0, 0, 0, 0.075);
+        padding: 10px 30px;
+        font-size: 3rem;
+        margin: 50px 0 25px;
+        letter-spacing: 1px;
+        font-family: "Bodega Sans", arial, sans-serif;
+        font-weight: normal;
+    }
+
+    .detail i{
+        font-size: 50px;
+        padding: 50px;
+        color: white;
+    }
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 10px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased; 
+    }
+
+    .detail video {
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+        
+    }
+    .detail article {
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    footer {
+        color: white;
+        box-shadow: 0 0 25px rgb(0 0 0 / 20%);
+        padding: 50px;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    footer h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-family: "Bodega Sans", arial, sans-serif;
+        text-transform: uppercase;
+    }
+
+    footer p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    footer a {
+        color: white;
+        list-style-type: disc;
+        padding: 10px;
+        display: inline-block;
+        font-family: sans-serif;
+    }
+
+    #footerbas {
+        padding-top: 2.5%;
+        font-size: 13px;
+    }
+
+    /**************** RESPONSIVE MEDIA QUERIES ****************/
+
+    /* TABLETTE */
+
+    @media screen and (max-width: 1024px) {
+        body {
+            padding: 25px;
+        }
+        
+        section .motos {
+            display: block;
+
+        }
+
+        .motos article{
+            display: block;
+            margin: auto;
+
+        }
+        
+        .detail article {
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+
+        .detail i {
+            display: block;
+            padding: 25px 0;
+        }
+    }
+
